@@ -9,7 +9,8 @@ ronda = 1
 puntos_usuario = 0
 puntos_pc = 0
 rondas_partida = int(input("Ingrese el numero de partidas a jugar: "))
-if rondas_partida == 0:
+
+if rondas_partida <= 0:
     rondas_partida = 1
 
 while ronda <= rondas_partida:
@@ -51,3 +52,5 @@ elif puntos_usuario < puntos_pc:
     print("La computadora ganó el juego.")
 else:
     print("Empate total.")
+
+input ("Fin del programa. ")
